@@ -1,4 +1,10 @@
 MotifitUcdPrototype::Application.routes.draw do
+  root "pages#index"
+  get "pages/signup"
+  get "pages/meetups"
+  get "pages/profile"
+  get "pages/about"
+  get "pages/contact"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
