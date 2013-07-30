@@ -26,5 +26,7 @@ module MotifitUcdPrototype
     # config.i18n.default_locale = :de
 
     config.sass.preferred_syntax = :sass
+
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end
