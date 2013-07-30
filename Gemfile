@@ -30,6 +30,10 @@ gem 'jbuilder', '~> 1.2'
 gem 'haml-rails'
 #gem 'bootstrap-sass', :git => 'git://github.com/intridea/bootstrap-sass.git', :branch => '3.0.0-wip'
 
+gem 'crummy'
+
+gem 'puma'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -46,3 +50,31 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development do
+  gem 'hirb'
+  gem 'binding_of_caller'
+  gem 'awesome_print'
+
+  gem 'guard-livereload'
+  gem 'rack-livereload'
+  gem 'meta_request'
+
+  gem 'annotate'
+  gem 'better_errors'
+  gem 'debugger'
+
+  gem 'quiet_assets'
+  #gem 'debase'
+  #gem 'ruby-debug-ide'
+
+  gem 'pry-remote'
+  gem 'pry-rails'
+  gem 'pry-stack_explorer'
+  gem 'pry-debugger'
+
+  gem 'zeus'
+  gem 'guard-zeus'
+  gem 'guard'
+  gem 'guard-puma'
+end
