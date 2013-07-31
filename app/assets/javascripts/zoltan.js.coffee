@@ -1,3 +1,7 @@
+## Code by Zoltan Debre
+## This code originally written in coffeescript, source code here:
+## https://github.com/szines/motifit_ucd_prototype/blob/master/app/assets/javascripts/zoltan.js.coffee
+
 window.counter = 0
 
 $ ->

@@ -30,17 +30,17 @@ MotifitUcdPrototype::Application.configure do
   #BetterErrors on remote machine browser
   BetterErrors::Middleware.allow_ip! '192.0.0.0/8'
 
-  config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
-
-  # ...or, change some options...
-
-  config.middleware.insert_before(
-      Rack::Lock, Rack::LiveReload,
-      :min_delay => 100,
-      :max_delay => 10000,
-      :port => 56789,
-      :host => 'localhost',
-      :ignore => [ %r{dont/modify\.html$} ]
-  )
+  #config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
+  #
+  ## ...or, change some options...
+  #
+  #config.middleware.insert_before(
+  #    Rack::Lock, Rack::LiveReload,
+  #    :min_delay => 100,
+  #    :max_delay => 10000,
+  #    :port => 56789,
+  #    :host => 'localhost',
+  #    :ignore => [ %r{dont/modify\.html$} ]
+  #)
 
 end

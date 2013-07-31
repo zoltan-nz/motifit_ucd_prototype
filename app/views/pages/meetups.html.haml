@@ -3,6 +3,7 @@
     =render_crumbs
   .container-fluid
     %h1 Meetups close to you
+    / Accordion boxes, default setting: first is open, no toggle option here
     =accordion_box('Bootcamp meetup - Tomorrow', 'You can open and close this box for more information', {'bootcampmeetuptomorrow' => 'true'}) do
       .row-fluid
         .span3
@@ -10,6 +11,7 @@
         .span8.offset1
           %h3 Bootcamp on the street
           %p Go and enjoy this great weather in Drumcondra.
+          / Using data-confirm for showing a confirmation question...
           =link_to 'Apply now', '#', class: 'btn btn-success btn-small', data: {confirm: 'Are you sure?'}
 
     =accordion_box('Running on The Beach - Next Saturday', 'You can open and close this box for more information') do

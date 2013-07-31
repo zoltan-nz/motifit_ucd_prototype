@@ -1,9 +1,5 @@
-/ Carousel
+/ Carousel, started with javascript
 #mySlideshow.carousel.slide
-  -#%ol.carousel-indicators
-  -#  %li{data: {target: '#mySlideshow', "slide-to" => '0'}}
-  -#  %li{data: {target: '#mySlideshow', "slide-to" => '1'}}
-  -#  %li{data: {target: '#mySlideshow', "slide-to" => '2'}}
   .carousel-inner
     .item.active
       =image_tag 'slide1.jpg'
@@ -11,7 +7,7 @@
         .carousel-caption
           %h1 Evolutionary MotiFit App
           %p.lead This App will motivate you to be more active and enjoy your life
-        =link_to "Download Now", "/", class: "btn btn-large btn-primary pull-right"
+        =link_to "Download Now", "#", class: "btn btn-large btn-primary pull-right"
     .item
       =image_tag 'slide2.jpg'
       .container
@@ -29,8 +25,10 @@
   =link_to raw("&lsaquo;"), '#mySlideshow', class: 'carousel-control left', data: {slide: 'prev'}
   =link_to raw("&rsaquo;"), '#mySlideshow', class: 'carousel-control right', data: {slide: 'next'}
 .content-wrapper
+  / Using responsive grid system for positioning
   .row-fluid
     .span3
+      / Image tag get a responsive class and the image will be smaller on mobile version
       %a{href: "http://www.apple.com"}
         =image_tag 'appstore.png', class: 'appstore'
     .span8.offset1

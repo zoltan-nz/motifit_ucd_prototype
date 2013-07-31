@@ -1,3 +1,6 @@
+/ Code by Zoltan Debre
+/ This code originally written in haml
+/ Source code: https://github.com/szines/motifit_ucd_prototype/tree/master/app/views
 !!!
 %html{lang: 'en'}
   %head
@@ -5,10 +8,15 @@
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
     %meta{name: 'description', content: 'Prototype website for UCD MotiFit app.'}
     %meta{name: 'author', content: 'Zoltan Debre'}
+    / Bootstrap import
     = stylesheet_link_tag "bootstrap.min"
     = stylesheet_link_tag "bootstrap-responsive.min"
+    / Customized styles by Zoltan
     = stylesheet_link_tag 'zoltan'
     %body
+      / ========= HEADER SECTION =============
       = render 'layouts/header'
+      / ========= CONTENT SECTION =============
       = render 'layouts/content'
+      / ========= FOOTER SECTION =============
       = render 'layouts/footer'

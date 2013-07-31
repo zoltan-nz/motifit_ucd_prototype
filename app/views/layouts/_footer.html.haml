@@ -1,10 +1,12 @@
-%footer.container
+%footer.container-fluid
   .well
     Copyright 2013 -  MotiFit
+/ ---- MODAL FORM for Sign Up button on each page ---
 #signup.modal.hide.fade
   .modal-header
     =button_tag raw('&times;'), class: 'close', data: {dismiss: 'modal'}
     %h3 Signup Today
+  / This form using jquery.validate.min.js for validation
   =form_tag '', method: 'get', id: 'signup_form' do
     %fieldset
       .modal-body
@@ -17,10 +19,6 @@
       .modal-footer
         =button_tag 'Close', class: 'btn', data: {dismiss: 'modal'}
         =submit_tag 'Sign Up', class: 'btn btn-primary'
-
-
-
-
 
 / If javascript files are on the end of a page, the page download faster.
 = javascript_include_tag 'jquery.min'

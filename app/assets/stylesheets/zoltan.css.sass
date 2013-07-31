@@ -1,6 +1,9 @@
-/* My own css ids and classes
+/* Styles by Zoltan
+/* This code originally writen in SASS
+/* Original source code: https://github.com/szines/motifit_ucd_prototype/blob/master/app/assets/stylesheets/zoltan.css.sass
 
-/* Menu line
+
+/* *** Menu line ***
 /* Need negativ margin for moving upp the carousel image
 .menu-wrapper
   margin-top: 15px
@@ -21,9 +24,8 @@
     padding-bottom: 10px
 
 
-/* Carousel customization
+/* *** Carousel customization ***
 .carousel
-  margin-bottom: 40px
   .carousel-control
     top: 50%
     z-index: 12
@@ -73,12 +75,12 @@
 .appstore
   margin-top: 20px
 
-/* Modal form classes
+/* **** Modal form classes ***
 
 .error
   color: red
 
-/* Accordion info icon position
+/* *** Accordion info icon position ***
 .info-icon-box
   position: relative
   float: right
@@ -123,7 +125,7 @@
 textarea
   width: 100%
 
-/* Responsive extension
+/* *** Responsive extension ***
 
 @media (max-width: 979px)
   .carousel
@@ -132,6 +134,17 @@ textarea
       .btn
         margin-right: 150px
 
+  .accordion-inner
+    img
+      max-width: 250px
+      margin-left: auto
+      margin-right: auto
+      text-align: center
+
+  .info-icon-box
+    display: none
+
+/* Responsive design for mobiles
 @media (max-width: 767px)
   .carousel
     .item
@@ -158,3 +171,18 @@ textarea
   
   .appstore
     width: 200px
+
+  .menu-wrapper
+    margin-top: 0px
+    margin-bottom: -80px
+    position: absolute
+    top: 0
+    left: 5px
+    right: 5px
+    z-index: 10
+
+  .content-wrapper
+    margin-top: 80px
+    margin-left: 20px
+    margin-right: 20px
+    margin-bottom: 20px

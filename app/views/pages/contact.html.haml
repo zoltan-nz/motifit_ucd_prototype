@@ -5,6 +5,7 @@
     %h1 We are listening
     %h3 Send us your feadback today
     .well
+      / This form validated by jquery.validate.min.js
       =form_tag '', method: 'get', id: 'contact_form' do
         %fieldset
           =label_tag 'email', 'E-mail address (without e-mail address we cannot send you response):'

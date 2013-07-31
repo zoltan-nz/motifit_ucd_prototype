@@ -62,7 +62,7 @@ group :development do
   #gem 'meta_request'
   #
   #gem 'annotate'
-  #gem 'better_errors'
+  gem 'better_errors'
   #gem 'debugger'
   #
   #gem 'quiet_assets'

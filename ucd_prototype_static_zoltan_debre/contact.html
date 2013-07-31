@@ -1,0 +1,110 @@
+<!-- Code by Zoltan Debre -->
+<!-- This code originally written in haml -->
+<!-- Source code: https://github.com/szines/motifit_ucd_prototype/tree/master/app/views -->
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>MotiFit UCD Prototype</title>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content='Prototype website for UCD MotiFit app.' name='description'>
+    <meta content='Zoltan Debre' name='author'>
+    <!-- Bootstrap import -->
+    <link href="assets/bootstrap.min.css" media="screen" rel="stylesheet" />
+    <link href="assets/bootstrap-responsive.min.css" media="screen" rel="stylesheet" />
+    <!-- Customized styles by Zoltan -->
+    <link href="assets/zoltan.css" media="screen" rel="stylesheet" />
+    <body>
+      <!-- ========= HEADER SECTION ============= -->
+      <!-- MENU - responsive, with dropdown menu and with a signup button which trigger a modal window -->
+      <div class='menu-wrapper'>
+        <header class='navbar navbar-inverse'>
+          <div class='navbar-inner'>
+            <!-- This button will be appear in mobile version and triggering responsive navbar. -->
+            <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" name="button" type=""><span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            </button>
+            <a class="brand" href="index.html">MotiFit</a>
+            <div class='nav-collapse collapse'>
+              <ul class='nav pull-left'>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meetups.html">Meetups</a></li>
+                <li class='dropdown'>
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class='caret'></b> About</a>
+                  <ul class='dropdown-menu'>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="theteam.html">The Team</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class='pull-right'>
+                <a class="btn btn-primary" data-toggle="modal" href="#signup" role="button">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <!-- ========= CONTENT SECTION ============= -->
+      <div class='content-wrapper'>
+        <div class='breadcrumb'>
+          <a class="" href="index.html">Home</a> &raquo; Contact
+        </div>
+        <div class='container-fluid'>
+          <h1>We are listening</h1>
+          <h3>Send us your feadback today</h3>
+          <div class='well'>
+            <!-- This form using bootstrap/jquery validation -->
+            <form accept-charset="UTF-8" action="" id="contact_form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                  <fieldset>
+                    <label for="email">E-mail address (without e-mail address we cannot send you response):</label>
+                    <input class="input-large" id="email" name="email" placeholder="E-mail address, not mandatory" type="email" />
+                    <label for="message">Your message: </label>
+                    <textarea id="message_" minlength="100" name="message[]" placeholder="Your message..." required="required">
+</textarea>
+                  </fieldset>
+                  <div class='form-actions'>
+                    <input class="btn btn-success" name="commit" type="submit" value="Send" />
+                  </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- ========= FOOTER SECTION ============= -->
+      <footer class='container-fluid'>
+        <div class='well'>
+          Copyright 2013 -  MotiFit
+        </div>
+      </footer>
+      <!-- MODAL FORM for Sign Up button on each page -->
+      <div class='modal hide fade' id='signup'>
+        <div class='modal-header'>
+          <button class="close" data-dismiss="modal" name="button" type="submit">&times;</button>
+          <h3>Signup Today</h3>
+        </div>
+        <!-- This form using jquery.validate.min.js for validation -->
+        <form accept-charset="UTF-8" action="" id="signup_form" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+          <fieldset>
+            <div class='modal-body'>
+              <label for="name">Your name:</label>
+              <input id="name" name="name" placeholder="Enter your name here" required="required" type="text" />
+              <label for="email">E-mail address:</label>
+              <input id="email" name="email" placeholder="Valid e-mail address" required="required" type="email" />
+              <label for="password">Password: </label>
+              <input id="password" minlength="5" name="password" placeholder="Minimum 5 character" required="required" type="password" value="" />
+            </div>
+            <div class='modal-footer'>
+              <button class="btn" data-dismiss="modal" name="button" type="submit">Close</button>
+              <input class="btn btn-primary" name="commit" type="submit" value="Sign Up" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <!-- If javascript files are on the end of a page, the page download faster. -->
+      <script src="assets/jquery.min.js"></script>
+      <script src="assets/jquery_ujs.js"></script>
+      <script src="assets/bootstrap.min.js"></script>
+      <script src="assets/jquery.validate.min.js"></script>
+      <script src="assets/zoltan.js"></script>
+    </body>
+  </head>
+</html>
