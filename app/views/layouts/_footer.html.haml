@@ -1,5 +1,30 @@
+%footer.container
+  .well
+    Copyright 2013 -  MotiFit
+#signup.modal.hide.fade
+  .modal-header
+    =button_tag raw('&times;'), class: 'close', data: {dismiss: 'modal'}
+    %h3 Signup Today
+  =form_tag '', method: 'get', id: 'signup_form' do
+    %fieldset
+      .modal-body
+        =label_tag 'name', 'Your name:'
+        =text_field_tag 'name', nil, placeholder: 'Enter your name here', required: ''
+        =label_tag 'email', 'E-mail address:'
+        =text_field_tag 'email', nil, placeholder: 'Valid e-mail address', type: 'email', required: ''
+        =label_tag 'password', 'Password: '
+        =password_field_tag 'password', '', placeholder: 'Minimum 5 character', required: '', minlength: 5
+      .modal-footer
+        =button_tag 'Close', class: 'btn', data: {dismiss: 'modal'}
+        =submit_tag 'Sign Up', class: 'btn btn-primary'
+
+
+
+
+
 / If javascript files are on the end of a page, the page download faster.
 = javascript_include_tag 'jquery.min'
 = javascript_include_tag 'jquery_ujs'
-= javascript_include_tag "bootstrap.min.js"
+= javascript_include_tag 'bootstrap.min.js'
+= javascript_include_tag 'jquery.validate.min'
 = javascript_include_tag 'zoltan'

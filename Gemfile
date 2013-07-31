@@ -56,6 +56,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'awesome_print'
 
+  gem 'guard'
   gem 'guard-livereload'
   gem 'rack-livereload'
   gem 'meta_request'
@@ -74,7 +75,4 @@ group :development do
   gem 'pry-debugger'
 
   gem 'zeus'
-  gem 'guard-zeus'
-  gem 'guard'
-  gem 'guard-puma'
 end

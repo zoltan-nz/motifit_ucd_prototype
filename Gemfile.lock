@@ -73,14 +73,6 @@ GEM
       em-websocket (>= 0.5.0)
       guard (>= 1.8.0)
       multi_json (~> 1.7)
-    guard-puma (0.2.3)
-      guard (>= 1.0.1)
-      libnotify
-      puma
-      rb-inotify
-    guard-zeus (0.0.1)
-      guard
-      zeus
     haml (4.0.3)
       tilt
     haml-rails (0.4)
@@ -99,8 +91,6 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.0)
-    libnotify (0.8.1)
-      ffi (>= 1.0.11)
     listen (1.2.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -211,8 +201,6 @@ DEPENDENCIES
   debugger
   guard
   guard-livereload
-  guard-puma
-  guard-zeus
   haml-rails
   hirb
   jbuilder (~> 1.2)

@@ -1,2 +1,15 @@
-%h1 Pages#meetups
-%p Find me in app/views/pages/meetups.html.haml
+.content-wrapper
+  %h1 Meetups around you
+  %table.table.table-bordered.table-hover
+    %thead
+      %tr
+        %th Date
+        %th Event
+        %th Action
+    %tbody
+      %tr
+        %td 03/08/2014
+        %td Bootcamp on the beach
+        %td
+          =link_to 'More info', '', class: 'btn'
+          =link_to 'Apply', '', class: 'btn'

@@ -17,6 +17,9 @@
     box-shadow: 0 2px 10px rgba(0,0,0,.25)
     -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25)
     -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25)
+    padding-top: 10px
+    padding-bottom: 10px
+
 
 /* Carousel customization
 .carousel
@@ -28,6 +31,8 @@
     z-index: 9
   .item
     height: 500px
+    .btn
+      margin-right: 200px
   img
     position: absolute
     top: 0
@@ -51,4 +56,59 @@
     h1
       margin-bottom: 30px
     .darker
-      color: darkgrey
+      color: #030303
+
+/* Margin around main content
+.content-wrapper
+  margin-top: 80px
+  margin-left: 100px
+  margin-right: 100px
+  margin-bottom: 50px
+
+.middle
+  text-align: center
+
+/* Proper position for appstore logo
+.appstore
+  margin-top: 20px
+
+/* Modal form classes
+
+.error
+  color: red
+
+/* Responsive extension
+
+@media (max-width: 979px)
+  .carousel
+    .item
+      height: 400px
+      .btn
+        margin-right: 150px
+
+@media (max-width: 767px)
+  .carousel
+    .item
+      height: 300px
+      .btn
+        margin-right: 50px
+    .carousel-caption
+      max-width: 400px
+      padding: 0 70px
+      margin-top: 100px
+      position: static
+      h1,
+      .lead
+        opacity: 1
+        margin: 0
+        line-height: 1.25
+        color: white
+        text-shadow: 0 1px 1px rgba(0,0,0,.4)
+      h1
+        margin-bottom: 30px
+        font-size: 25px
+      .lead
+        font-size: 20px
+  
+  .appstore
+    width: 200px

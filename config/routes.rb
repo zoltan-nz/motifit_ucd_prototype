@@ -1,9 +1,8 @@
 MotifitUcdPrototype::Application.routes.draw do
   root "pages#index"
-  get "/signup" => 'pages#signup', as: :signup
   get "/meetups" => 'pages#meetups', as: :meetups
   get "/profile" => 'pages#profile', as: :profile
-  get "/about" => 'pages#about', as: :about
+  get "/theteam" => 'pages#theteam', as: :theteam
   get "/contact" => 'pages#contact', as: :contact
 
   # The priority is based upon order of creation: first created -> highest priority.

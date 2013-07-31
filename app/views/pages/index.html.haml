@@ -11,20 +11,32 @@
         .carousel-caption
           %h1 Evolutionary MotiFit App
           %p.lead This App will motivate you to be more active and enjoy your life
-          =link_to "Download Now", "/", class: "btn btn-large btn-primary pull-right"
+        =link_to "Download Now", "/", class: "btn btn-large btn-primary pull-right"
     .item
       =image_tag 'slide2.jpg'
       .container
         .carousel-caption
           %h1 Register Today
           %p.lead Join to a vibrate community today
-          =link_to "Sign up", "/signup", class: "btn btn-large btn-primary pull-right"
+        =link_to "Sign up", "#signup", class: "btn btn-large btn-danger pull-right", data: {toggle: 'modal'}
     .item
       =image_tag 'slide3.jpg'
       .container
         .carousel-caption
           %h1.darker About Us
           %p.lead.darker  We are a passionate young enterprenours, please read more about us 
-          =link_to "The Team", "/about", class: "btn btn-large btn-primary pull-right"
+        =link_to "The Team", "/theteam", class: "btn btn-large btn-success pull-right"
   =link_to raw("&lsaquo;"), '#mySlideshow', class: 'carousel-control left', data: {slide: 'prev'}
   =link_to raw("&rsaquo;"), '#mySlideshow', class: 'carousel-control right', data: {slide: 'next'}
+.content-wrapper
+  .row-fluid
+    .span3
+      %a{href: "http://www.apple.com"}
+        =image_tag 'appstore.png', class: 'appstore'
+    .span8.offset1
+      %h2 Our app available in App Store
+      %h3 Latest features:
+      %ul
+        %li Get notifications from available events
+        %li Find your nearest event based on your location
+        %li Fintess instructures can register for free

@@ -1,0 +1,18 @@
+.content-wrapper
+  .breadcrumb
+    =render_crumbs
+  .container-fluid
+    %h1 The Team
+    .row-fluid
+      .span4.well.middle
+        =image_tag 'niki.jpg', class: 'img-circle'
+        %h3.middle Niki Tisza
+        =link_to "LinkedIn profile", "http://ie.linkedin.com/in/nikitisza", class: 'btn btn-small'
+      .span4.well.middle
+        =image_tag 'maeve.jpg', class: 'img-circle'
+        %h3.middle Maeve O'Hagan
+        =link_to "LinkedIn profile", "http://ie.linkedin.com/pub/maeve-o-hagan/42/9b4/7b", class: 'btn btn-small'
+      .span4.well.middle
+        =image_tag 'zoltan.jpg', class: 'img-circle'
+        %h3 Zoltan Debre
+        =link_to "LinkedIn profile", "http://ie.linkedin.com/in/zoltandebre", class: 'btn btn-small'
