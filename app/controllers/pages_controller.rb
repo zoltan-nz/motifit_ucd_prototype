@@ -8,9 +8,6 @@ class PagesController < ApplicationController
   def meetups
   end
 
-  def profile
-  end
-
   def about
   end
 
