@@ -1,15 +1,32 @@
 .content-wrapper
-  %h1 Meetups around you
-  %table.table.table-bordered.table-hover
-    %thead
-      %tr
-        %th Date
-        %th Event
-        %th Action
-    %tbody
-      %tr
-        %td 03/08/2014
-        %td Bootcamp on the beach
-        %td
-          =link_to 'More info', '', class: 'btn'
-          =link_to 'Apply', '', class: 'btn'
+  .breadcrumb
+    =render_crumbs
+  .container-fluid
+    %h1 Meetups close to you
+    =accordion_box('Bootcamp meetup - Tomorrow', 'You can open and close this box for more information', {'bootcampmeetuptomorrow' => 'true'}) do
+      .row-fluid
+        .span3
+          =image_tag 'meetup1.jpg', class: 'img-circle'
+        .span8.offset1
+          %h3 Bootcamp on the street
+          %p Go and enjoy this great weather in Drumcondra.
+          =link_to 'Apply now', '#', class: 'btn btn-success btn-small', data: {confirm: 'Are you sure?'}
+
+    =accordion_box('Running on The Beach - Next Saturday', 'You can open and close this box for more information') do
+      .row-fluid
+        .span3
+          =image_tag 'meetup2.jpg', class: 'img-circle'
+        .span8.offset1
+          %h3 Running on the beach
+          %p Great event, amazing environment, come and enjoy the beach in Laytown.
+          =link_to 'Apply now', '#', class: 'btn btn-success btn-small', data: {confirm: 'Are you sure?'}
+
+    =accordion_box('Cycling in Wicklow - Next Sunday', 'You can open and close this box for more information') do
+      .row-fluid
+        .span3
+          =image_tag 'meetup3.jpg', class: 'img-circle'
+        .span8.offset1
+          %h3 Cycling in Wicklow
+          %p The best place in the World. Spectacular montains and great team. You will love this event.
+          =link_to 'Apply now', '#', class: 'btn btn-success btn-small'
+

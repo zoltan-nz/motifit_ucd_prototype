@@ -52,27 +52,27 @@ end
 # gem 'debugger', group: [:development, :test]
 
 group :development do
-  gem 'hirb'
-  gem 'binding_of_caller'
-  gem 'awesome_print'
-
-  gem 'guard'
-  gem 'guard-livereload'
-  gem 'rack-livereload'
-  gem 'meta_request'
-
-  gem 'annotate'
-  gem 'better_errors'
-  gem 'debugger'
-
-  gem 'quiet_assets'
-  #gem 'debase'
-  #gem 'ruby-debug-ide'
-
-  gem 'pry-remote'
-  gem 'pry-rails'
-  gem 'pry-stack_explorer'
-  gem 'pry-debugger'
-
-  gem 'zeus'
+  #gem 'hirb'
+  #gem 'binding_of_caller'
+  #gem 'awesome_print'
+  #
+  #gem 'guard'
+  #gem 'guard-livereload'
+  #gem 'rack-livereload'
+  #gem 'meta_request'
+  #
+  #gem 'annotate'
+  #gem 'better_errors'
+  #gem 'debugger'
+  #
+  #gem 'quiet_assets'
+  ##gem 'debase'
+  ##gem 'ruby-debug-ide'
+  #
+  #gem 'pry-remote'
+  #gem 'pry-rails'
+  #gem 'pry-stack_explorer'
+  #gem 'pry-debugger'
+  #
+  #gem 'zeus'
 end

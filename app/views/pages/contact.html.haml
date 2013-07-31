@@ -1,0 +1,15 @@
+.content-wrapper
+  .breadcrumb
+    =render_crumbs
+  .container-fluid
+    %h1 We are listening
+    %h3 Send us your feadback today
+    .well
+      =form_tag '', method: 'get', id: 'contact_form' do
+        %fieldset
+          =label_tag 'email', 'E-mail address (without e-mail address we cannot send you response):'
+          =text_field_tag 'email', nil, placeholder: 'E-mail address, not mandatory', type: 'email', class: 'imput-xxlarge'
+          =label_tag 'message', 'Your message: '
+          =text_area 'message', '', placeholder: 'Minimum 100 character', required: '', minlength: 100
+        .form-actions
+          =submit_tag 'Send', class: 'btn btn-success'
