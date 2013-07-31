@@ -8,12 +8,7 @@
     = stylesheet_link_tag "bootstrap.min"
     = stylesheet_link_tag "bootstrap-responsive.min"
     = stylesheet_link_tag 'zoltan'
-    = javascript_include_tag 'jquery.min'
-    = javascript_include_tag 'jquery_ujs'
-    = javascript_include_tag "bootstrap.min.js"
-    = javascript_include_tag 'zoltan'
-  %body
-    .container-fluid
+    %body
       = render 'layouts/header'
       = render 'layouts/content'
       = render 'layouts/footer'

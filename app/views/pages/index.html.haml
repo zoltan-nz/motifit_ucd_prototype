@@ -1,9 +1,30 @@
+/ Carousel
 #mySlideshow.carousel.slide
+  -#%ol.carousel-indicators
+  -#  %li{data: {target: '#mySlideshow', "slide-to" => '0'}}
+  -#  %li{data: {target: '#mySlideshow', "slide-to" => '1'}}
+  -#  %li{data: {target: '#mySlideshow', "slide-to" => '2'}}
   .carousel-inner
-    .item
-      %img
+    .item.active
+      =image_tag 'slide1.jpg'
       .container
         .carousel-caption
-          %h1 Download our App
+          %h1 Evolutionary MotiFit App
+          %p.lead This App will motivate you to be more active and enjoy your life
+          =link_to "Download Now", "/", class: "btn btn-large btn-primary pull-right"
+    .item
+      =image_tag 'slide2.jpg'
+      .container
+        .carousel-caption
+          %h1 Register Now
           %p.lead More text
-          =link_to "Download", "/", class: "btn btn-large btn-primary"
+          =link_to "Download", "/", class: "btn btn-large btn-primary pull-right"
+    .item
+      =image_tag 'slide3.jpg'
+      .container
+        .carousel-caption
+          %h1 Register Now
+          %p.lead More text
+          =link_to "Download", "/", class: "btn btn-large btn-primary pull-right"
+  =link_to raw("&lsaquo;"), '#mySlideshow', class: 'carousel-control left', data: {slide: 'prev'}
+  =link_to raw("&rsaquo;"), '#mySlideshow', class: 'carousel-control right', data: {slide: 'next'}

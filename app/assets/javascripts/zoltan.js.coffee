@@ -1,0 +1,2 @@
+$ ->
+  $('#mySlideshow').carousel()
