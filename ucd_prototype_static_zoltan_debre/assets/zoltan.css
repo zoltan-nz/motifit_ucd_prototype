@@ -126,13 +126,15 @@ textarea {
       margin-right: 150px; }
 
   .accordion-inner img {
-    max-width: 250px;
+    max-width: 200px;
     margin-left: auto;
     margin-right: auto;
     text-align: center; }
 
   .info-icon-box {
-    display: none; } }
+    display: none; } 
+
+  }
 /* Responsive design for mobiles */
 @media (max-width: 767px) {
   .carousel .item {
